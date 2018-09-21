@@ -50,9 +50,13 @@ namespace LINQLabEx1
             float totalStockPrice = 0;
             foreach (var prod in pModels.Products)
             {
-                Console.WriteLine("Product {0} costs {1} euros, has {2} pieces in stock and has a total value of {3} euros", 
-                    prod.Description, prod.UnitPrice, prod.QuantityInStock, prod.UnitPrice*prod.QuantityInStock);
-                totalStockPrice += prod.UnitPrice * prod.QuantityInStock;
+               
+                Console.WriteLine("Product Description: " + prod.Description);
+                Console.WriteLine("Quantity in stock: " + prod.QuantityInStock);
+                Console.WriteLine("Unit price: " + prod.UnitPrice);
+                Console.WriteLine("Total value: " + prod.UnitPrice*prod.QuantityInStock);
+                Console.WriteLine();
+                totalStockPrice = prod.UnitPrice * prod.QuantityInStock;
             }
             Console.WriteLine("Total stock value is {0} euros", totalStockPrice);
 
