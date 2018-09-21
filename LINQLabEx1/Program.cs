@@ -18,6 +18,8 @@ namespace LINQLabEx1
             {
                 Console.WriteLine(" - " + cat.Description);
             }
+
+            Console.WriteLine("\nPress enter to continue");
             Console.ReadKey();
             Console.Clear();
 
@@ -28,6 +30,7 @@ namespace LINQLabEx1
                 Console.WriteLine(" - " + prod.Description);
             }
 
+            Console.WriteLine("\nPress enter to continue");
             Console.ReadKey();
             Console.Clear();
 
@@ -39,6 +42,7 @@ namespace LINQLabEx1
                 Console.WriteLine(" - {0} has a quantity of {1}", item.Description, item.QuantityInStock); 
             }
 
+            Console.WriteLine("\nPress enter to continue");
             Console.ReadKey();
             Console.Clear();
 
@@ -52,6 +56,7 @@ namespace LINQLabEx1
             }
             Console.WriteLine("Total stock value is {0} euros", totalStockPrice);
 
+            Console.WriteLine("\nPress enter to continue");
             Console.ReadKey();
             Console.Clear();
 
@@ -67,6 +72,7 @@ namespace LINQLabEx1
                 Console.WriteLine(" - " + prod.productName);
             }
 
+            Console.WriteLine("\nPress enter to continue");
             Console.ReadKey();
             Console.Clear();
 
@@ -84,6 +90,7 @@ namespace LINQLabEx1
                 Console.WriteLine(" - " + item.supplierName + " : " + item.productName);
             }
 
+            Console.WriteLine("\nPress enter to exit");
             Console.ReadKey();
         }
     }
